@@ -77,8 +77,21 @@ main p{
     justify-content: center;
 }
 footer {
-    background-color:rgba(187, 182, 182, 0.52)
+    display: flex;
+    align-items: flex-end;
+    background-color:rgba(187, 182, 182, 0.52);
+    width: 100vw;
 }
 footer nav ul li {
     display: inline-block;
+}
+footer nav section{
+    display:flex;
+    width: 100vw;
+}
+footer nav section .nav-under-left{
+    justify-content: flex-start;
+}
+footer nav section .nav-under-rigth{
+    justify-content: flex-end;
 }
