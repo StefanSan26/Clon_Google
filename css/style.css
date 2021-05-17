@@ -137,21 +137,34 @@ main .texto{
     margin-top: 1rem;
 }
 footer {
-    display: flex;
-    align-items: flex-end;
     background-color:rgba(187, 182, 182, 0.52);
+    font-size: 0.9rem;
     width: 100vw;
+    height: 5rem;
+    /* para que se quede al fondo de la pagina: */
+    position: absolute;
+    bottom: 0;
+    /* Opcion #1 para el footer:con Grid, sin nav */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* align-items: center; */
 }
 footer nav ul li {
     display: inline-block;
+    padding-left: 1rem;
+}
+footer span{
+    color: rgb(92, 91, 91);
+    padding: 0.5rem 1rem;
+    height: 2rem;
+    display: inline-block;
 }
 footer nav section{
+    /* opcion #2 con nav + flex +space-between */
     display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 100vw;
-}
-footer nav section .nav-under-left{
-    justify-content: flex-start;
-}
-footer nav section .nav-under-rigth{
-    justify-content: flex-end;
+    padding-top: 0.7rem;
+    border-top: 1px solid rgb(172, 170, 170);
 }
