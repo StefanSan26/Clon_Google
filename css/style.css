@@ -1,4 +1,8 @@
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body{
     margin: 0;
     padding: 0;
@@ -16,6 +20,7 @@ header{
 header nav{
     display: flex;
     justify-content: flex-end;
+    margin-top: 1rem;
 }
 
 header nav .nav-rigth-section {
@@ -44,37 +49,92 @@ main {
     width: 100vw;
     height: 60vh;
     justify-content: center;
+    margin-top: 4rem;
+    text-align: center;
 }
 main img{
     display: flex;
-    margin: 8% auto 3%;
+    margin: 0 auto ;
+    margin-bottom: 2rem;
+    width: 18rem;
 }
-main input {
-    width: 400px;
-    height: 30px;
+main .main-input{
+    width: 33rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+main .main-input-container{
+    width: 32.5rem; 
     border-radius: 20px;
-    display: flex;
-    margin: 2% auto;
-    border-width: 1px;
+    border: 1px;
     border-color: rgba(187, 182, 182, 0.52);
     border-style: solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     
 }
-main section{
-    display: flex;
-    margin: 0 auto;
-    width: 300px;
-    height: 40px;
-    justify-content: center;
+main .main-input input {
+    height: 2.3rem;
+    width: 29rem;
+    border: none;
+    outline: none;
 }
-main section button{
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+} 
+main .main-input .search-icon{
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+main .main-input .micro-icon{
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+main .main-buttons{
+    /* display: flex; */
+    margin: 0 auto;
+    width: 33rem;
+    /* justify-content: center; */
+    
+}
+main .main-buttons div{
+    display: inline-block;
+    /* Importante: inline block requiere de un div ya que los botones no manejan esta
+    propiedad  */
+}
+main .main-buttons button{
+    
     height: 35px;
+    background-color: #f2f2f2;
     margin-right: 10px;
     border-style: none;
+    font-size: 0.9rem;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 1rem;
+    cursor: pointer;
+    border: 1px solid #f2f2f2;
 }
-main p{
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgb(197, 197, 197);
+    /* background-color: #f8f8f8; */
 
-    justify-content: center;
+}
+main .texto{
+    margin-top: 1rem;
 }
 footer {
     display: flex;
